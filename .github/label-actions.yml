@@ -1,0 +1,125 @@
+# Configuration for Label Actions - https://github.com/dessant/label-actions
+
+# Actions taken when the `incomplete-submission` label is added to issues 
+status:invalid-issue:
+  # Post a comment
+  comment: |+
+    Thank you for your submission, but there isn't enough detail in the issue for us to review & move forward.
+       
+    The new issue template includes sections for you to fill out.
+        
+    Please resubmit your issue and complete the provided sections in the new item template so we can move forward on it refer to our wiki for more information: [How to Create Good Issues](https://github.com/pnp/sp-dev-fx-webparts/wiki/How-to-Create-Good-Issues)
+
+  # Close the issue
+  close: true
+
+# Actions taken when the `incomplete-submission` label is added to issues 
+status:incomplete-submission:
+  # Post a comment
+  comment: |+
+    Thank you for your submission, but there isn't enough detail in the issue for us to review & move forward.
+        
+    The new issue template includes sections for you to fill out. Please resubmit your issue and complete the provided sections in the new item template so we can move forward on it refer to our wiki for more information: [How to Create Good Issues](https://github.com/pnp/sp-dev-fx-webparts/wiki/How-to-Create-Good-Issues)
+
+  # Close the issue
+  close: true
+
+# Actions taken when the `wrong-repo` label is added to issues 
+status:wrong-repo:
+  # Post a comment
+  comment: |+
+    Thank you for your submission, but this issues list is intended only for issues related to the samples in this repository.
+        
+    For general SPFx development issues, you may want to try to create issues in the [SP-Dev-Docs repository](https://github.com/SharePoint/sp-dev-docs/issues/new)
+
+  # Close the issue
+  close: true
+
+# Actions taken when the `wrong-author` label is added to issues 
+status:wrong-author:
+  # Post a comment
+  comment: |+
+    ## Wrong or missing contributor @mentions
+
+    Thank you for your submission, but you appear to have forgotten to @mention the sample author(s).
+
+    To help increase your chances of getting assistance from the original authors of the sample, you should make sure to @mention the actual authors (and not the repository maintainers). 
+
+    Make sure to include the `@` character before the GitHub username so that the author(s) get notified; using the person's name is not going to work.
+
+    Please note that the sample authors will not get notified about this issue unless you update this issue accordingly.    
+
+    You can find the author(s) of each sample in the sample's `README.md`, under **Solution**.
+
+    We'll automatically close this issue in 7 days unless you update the issue.
+
+    For more information on how to create a good issue, refer to our wiki for more information: [How to Create Good Issues](https://github.com/pnp/sp-dev-fx-webparts/wiki/How-to-Create-Good-Issues)
+
+  # Close the issue
+  close: false
+
+
+# Dealing with wrong versions of Node issues
+status:node-compatibility:
+  # Post a comment
+  comment: |+
+    Thank you for your issue. It looks like the web part sample you're trying to use is not compatible with the version of Node.js that you're running in your environment.
+    
+    You should refer to [the troubleshooting instructons](https://github.com/pnp/sp-dev-fx-webparts/wiki/Troubleshooting-issues-with-samples) **before** opening an issue to make sure that you have eliminated the most common causes.
+    
+    We'll close this issue, but if you run into further issues after you have made changes to your environment and followed the [troubreshooting steps](https://github.com/pnp/sp-dev-fx-webparts/wiki/Troubleshooting-issues-with-samples), please do not hesitate to open a new issue so we can help you further.
+
+  # Close the issue
+  close: true
+
+
+# Dealing with people asking for app packages
+status:app-package-request:
+  # Post a comment
+  comment: |+
+    ## Requests for packaged solutions
+
+    Thank you for reaching out! Please note that the samples in this repository are intended solely for educational purposes. Unfortunately, we are unable to provide a built or packaged solution.
+    
+    For your safety and security, we strongly advise against downloading or installing any packaged solutions from the internet without thoroughly reviewing their contents first. Additionally, please ensure to consult your organization’s security guidelines before employing any samples from this repository in a production environment.
+    
+    For more detailed information, please review our [support guidelines](https://github.com/pnp/sp-dev-fx-webparts/blob/main/SUPPORT.md).
+
+    Feel free to open a new issue if you'd like to request for help building the solution. Make sure to provide all the requested information so that we can help you as quickly as possible.
+    
+    We appreciate your understanding and cooperation!
+
+  # Close the issue
+  close: true
+
+  # Dealing with people asking for app packages
+status:spfx-doctor:
+  # Post a comment
+  comment: |+
+    ## No SPFx Doctor information
+    Thank you for reaching out! Unfortunately, we cannot proceed further without information from SPFx doctor to diagnose potential dependency issues with your enviroment and/or project.
+
+    Follow [the steps](https://github.com/pnp/sp-dev-fx-webparts/wiki/Troubleshooting-issues-with-samples#run-spfx-doctor) listed in [troubleshooting issues with samples](https://github.com/pnp/sp-dev-fx-webparts/wiki/Troubleshooting-issues-with-samples)
+
+    Feel free to open a new issue with the full SPFx doctor results. Make sure to provide all the requested information so that we can help you as quickly as possible.
+    
+    We appreciate your understanding and cooperation!
+
+  # Close the issue
+  close: true
+
+# First time contributors
+first-time-contributor:
+    comment: |+
+      ## First-Time Contributor
+
+      Thank you for your contribution! It looks like that you are a first-time contributor in this repository.
+
+      Did you know that you are eligible for the PnP Recognition program, and that your submission will qualify for a badge :-) ?
+      
+      All you need to do is to register at https://pnp.github.io/recognitionprogram. Once you are registered, we'll automatically assign contribution badges for qualifying contributions.
+
+      We hope to see more contributions from you in the future!!!
+
+    # Don't close
+    close: false
